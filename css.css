@@ -1,0 +1,245 @@
+body{
+    font-family: Fino, sans-serif;
+    margin:0;
+    padding:0;
+    
+   
+}
+
+
+
+
+
+
+
+header {
+    background-color: #000000;
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.brand-name {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 3vw; /* Usando vw para ser responsivo */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 2vw; /* Usando vw para margem responsiva */
+}
+
+/* Menu de navegação */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    margin-right: 3vw; /* Usando vw para margem responsiva */
+    justify-content: flex-start; 
+}
+
+.ul li {
+    margin-left: 2vw; /* Usando vw para espaçamento responsivo */
+    margin-top: 1.5vw;
+}
+
+.ul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul a::after {
+    content: "";
+    background-color: #ffffff;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .ul {
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        background-color: #b90000;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .ul.active {
+        display: flex; 
+    }
+
+    .ul li {
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 10px; 
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+.polvo{
+    width: 320px;
+   position: relative;
+   float: center;
+   margin: 70px 20px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.bella{
+    width: 370px;
+    margin-left: 325px; 
+    position: relative;
+    float: left;
+}
+
+.texto{
+    width: 35%;
+    margin-right: 325px; 
+    position: relative;
+    float: right;
+}
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li  {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 0;
+}
+
+.contato{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 450px;
+}
+
+footer {
+    background-color: #383838;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+}
+
+
+
+@media (max-width: 480px) {
+
+    h1 {
+      font-size: 1.8rem;
+      /* Tamanho da fonte em telas pequenas */
+      /*letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+  
+    section input {
+      width: 17rem;
+      /* Largura total dos inputs em telas pequenas */
+    }
+  
+    section button {
+      padding: 0.6rem 1rem;
+      /* Espaçamento interno do botão em telas pequenas */
+      font-size: 0.9rem;
+      /* Tamanho da fonte do botão em telas pequenas */
+    }
+  
+    .resultados-pesquisa {
+      width: 90%;
+      /* Largura da caixa de resultados em telas pequenas */
+      height: 50vh;
+      /* Altura da caixa de resultados em telas pequenas */
+    }
+  
+    .item-resultado h2 {
+      font-size: 1.1rem;
+      /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+  
+    footer {
+      font-size: 0.9rem;
+      /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+  }
